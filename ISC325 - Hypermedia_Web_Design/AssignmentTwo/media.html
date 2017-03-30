@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5 Assignment</title>
+	<meta charset="UTF-8">
+  	<meta name="description" content="SUNY Oswego HTML5">
+  	<meta name="keywords" content="HTML5,CSS">
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+
+<style>
+
+	h1{
+	   text-align:center;
+	   font-family: 'Nosifer', cursive;
+	   font-size:35px;
+	   
+	  }
+
+	 .button{
+        
+        text-align:center;
+
+	 }
+
+	 .button a{
+
+	 	text-decoration: none;
+	 }
+
+	nav { 
+		border-top: 10px solid black;
+		padding:5px 5px;
+		text-align:center;
+	
+
+
+		 }
+
+	nav a:link,a:visited { 
+		border-radius: 0 0 15px 15px; 
+		padding:0px 15px;
+	    }
+
+
+	nav a {
+
+		
+		font-weight: bold;
+		color: #000;
+		margin: 0 5px; 
+		background-color: #131313; 
+		font-family: 'Nosifer', cursive;
+		text-decoration: none;
+		font-size: 20px;
+		color:red;
+		display: inline-block;
+		
+
+		}
+
+	nav a:hover {
+
+		background-color: #D10000; 
+		color: black;
+		/*padding-top: 10px;*/
+       /* padding-bottom: 10px;*/
+
+
+
+		}
+
+
+        .active{
+
+
+       		background-color: #D10000; 
+		    color: black;
+		    /*padding-top: 10px;
+            padding-bottom: 10px;  */
+
+
+        }
+
+        body{
+        	background-color: #ffe6e6;
+        
+        }
+
+        div img{
+        	user-drag: none; 
+			user-select: none;
+			-moz-user-select: none;
+			-webkit-user-drag: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+
+        }
+
+        canvas {
+		    padding-left: 0;
+		    padding-right: 0;
+		    margin-left: auto;
+		    margin-right: auto;
+		    display: block;
+		    width: 800px;
+
+        }
+
+        #map{
+
+        	text-align:center;
+        }
+
+        footer { 
+
+    		display: block;
+    		text-align:center;
+
+		}
+
+
+
+       
+		 
+		svg {
+		 
+			width: 240px;
+			height:240px;
+			position:absolute;
+			/*float: left;*/
+			bottom:420px;
+			left:120px;
+		 
+		}
+
+		 
+		/* --------------------------
+		 
+		Now we add the actual animation.
+		 
+		--------------------------- */
+		 
+		.html {
+		 
+			transition: .3s ease-out;
+		 
+		}
+		 
+		.html:hover {
+		 
+			fill: red;
+		 
+		}
+
+		#polygonOneColor{
+			fill:#E54D26;
+			stroke:none;
+			stroke-width:0.5;
+
+		}
+
+		#polygonTwoColor{
+
+			fill:#F1652A;
+			stroke:none;
+			stroke-width:0.5;
+
+		}
+
+		#polygonTwoColor:hover {
+		 
+			fill: red;
+		 
+		}
+		#polygonOneColor:hover {
+		 
+			fill: black;
+		 
+		}
+		.audioPlayer{
+
+			padding-left: 0;
+		    padding-right: 0;
+		    margin-left: auto;
+		    margin-right: auto;
+		    display: block;
+		}
+
+		video{
+
+			width:800px;
+			padding-left: 0;
+		    padding-right: 0;
+		    margin-left: auto;
+		    margin-right: auto;
+		    display: block;
+		    
+		}
+
+		.button a{
+
+			font-size: 25px;
+			font-family: verdana;
+			color:red;
+			
+		}
+
+		.butt{
+			  font: bold 11px Arial;
+			  text-decoration: none;
+			  background-color: #EEEEEE;
+			  color: #333333;
+			  padding: 2px 6px 2px 6px;
+			  border-top: 1px solid #CCCCCC;
+			  border-right: 1px solid #333333;
+			  border-bottom: 1px solid #333333;
+			  border-left: 1px solid #CCCCCC;
+		}
+
+		h3{
+			font-family: verdana;
+			color:red;
+			text-align:center;
+		}
+		
+</style>
+
+
+<link href="https://fonts.googleapis.com/css?family=Lobster|Nosifer" rel="stylesheet">
+
+</head>
+<body>
+
+
+	<nav>
+	  <a href="page2.html" >HOME</a>
+	  <a href="compParts.html">COMPUTER PARTS</a>
+	  <a href="buildComp.html">BUILD A COMPUTER</a>
+	  <a href="media.html" class="active">MEDIA &amp; UTILITIES</a>
+	  <a href="../index.html">GO TO MAIN</a>
+	</nav>
+
+<div >
+
+	<svg height="240" width="180">
+
+		<defs class="five">
+			<linearGradient id="textgradient" x1="0%" x2="100%" y1="0%" y2="0%">
+			    <stop stop-color = "#EBEBEB" offset = "50%"/>
+			    <stop stop-color = "#FFFFFF" offset = "100%"/>
+			</linearGradient>
+		</defs>
+
+		<text class="html" x="15" y="35" font-family="arial" font-size="50px" font-weight="bold" stroke="black" stroke-width="4" fill="black" >HTML</text>
+		<polygon class="html" id="polygonOneColor" points="0 50,170 50,153 220,85 240,17 220"/>
+
+		<polygon class="html" id="polygonTwoColor" points="85 66,151 66,138 204,85 225"/>
+
+		<text x="28" y="200" style="fill:url(#textgradient); font-weight:bold; font-size:160px; font-family:verdana;">5</text>
+
+		  
+	</svg>
+</div>
+
+
+
+<br>
+<hr>
+<h1>Play Me</h1>
+
+<!-- Creates the canvas workspace -->
+<canvas id="canvasGameId" width="800" height="600"></canvas>
+
+<!-- Contains JavaScript Code -->
+<script>
+
+//variables
+var canvas;
+var canvasContext;
+var pageHeight;
+var pageWidth;
+var ballPosX = 50;
+var ballPosY = 50;
+var framesPerSecond = 30;
+var ballSpeedX  = 10;
+var ballSpeedY  = 5;
+var paddleOneY  = 250;
+var paddleTwoY  = 250;
+const PADDLE_HEIGHT = 100;
+const MAX_SCORE = 3;
+var visibleWinScreen = true;
+
+var playerOneScore = 0;
+var playerTwoScore = 0;
+
+function calculateMousePos(evt) {
+	var rect = canvas.getBoundingClientRect();
+	var root = document.documentElement;
+	var mousePosX = evt.clientX - rect.left - root.scrollLeft;
+	var mousePosY = evt.clientY - rect.top - root.scrollTop;
+	return {
+		x:mousePosX,
+		y:mousePosY
+	};
+}
+
+function handleMouseClick(evt){
+   
+   if(visibleWinScreen){
+
+   		playerTwoScore  = 0;
+   		playerOneScore  = 0;
+   		visibleWinScreen = false;
+   }
+
+
+}
+
+
+//actions on window load
+window.onload = function(){
+
+	//creates a 2d canvas object
+	canvas = document.getElementById('canvasGameId');
+	canvasContext = canvas.getContext('2d');
+
+    canvasContext.font = "bold 25px Verdana";
+
+
+	//framesPerSecond to call the functions
+	setInterval(function(){
+		moveAll();
+		drawAll();
+	}, 1000/framesPerSecond);
+
+	
+	canvas.addEventListener('mousemove',
+		function(evt) {
+			var mousePos = calculateMousePos(evt);
+			paddleOneY = mousePos.y - (PADDLE_HEIGHT/2);
+		});
+
+	canvas.addEventListener('mousedown', handleMouseClick);
+
+	
+    
+
+	
+}
+
+function resetBall(){
+
+	if(playerOneScore >= MAX_SCORE || playerTwoScore >= MAX_SCORE){
+
+        var winner = new Audio('game/winner.wav');
+		visibleWinScreen = true;
+			winner.play();
+
+	}
+
+	ballSpeedX = -ballSpeedX;
+	ballPosX = canvas.width/2;
+	ballPosY = canvas.height/2;
+}
+
+
+function artificialIntelligence(){
+
+	      var paddleTwoYCenter = paddleTwoY + (PADDLE_HEIGHT/2);
+          
+          if(paddleTwoYCenter < ballPosY-35){
+
+          	paddleTwoY += 6;
+
+          }else if(paddleTwoYCenter > ballPosY+35){
+
+          	paddleTwoY -= 6;
+          }
+
+	}
+
+//encharge of objects motion
+function moveAll(){
+
+	var bounce = new Audio('game/bound.wav');
+	var missed = new Audio('game/miss.wav');
+
+
+	if(visibleWinScreen){
+
+		return;
+	}
+
+    artificialIntelligence();
+	
+    ballPosX += ballSpeedX;
+
+    ballPosY += ballSpeedY;
+
+
+
+    if(ballPosX < 0)
+    {
+    	if(ballPosY > paddleOneY && ballPosY < paddleOneY+PADDLE_HEIGHT){
+
+    		ballSpeedX = -ballSpeedX;
+
+    		var deltaY = ballPosY -(paddleOneY+PADDLE_HEIGHT/2);
+
+    		ballSpeedY = deltaY * 0.35;
+
+    		bounce.play();
+
+    	}else{
+
+    		missed.play();
+    		playerTwoScore++;
+    		resetBall();
+    	}
+    	
+    }
+
+    if(ballPosX > canvas.width){
+
+    	if(ballPosY > paddleTwoY && ballPosY < paddleTwoY+PADDLE_HEIGHT){
+
+    		ballSpeedX = -ballSpeedX;
+
+    		var deltaY = ballPosY -(paddleTwoY+PADDLE_HEIGHT/2);
+
+    		ballSpeedY = deltaY * 0.35;
+
+    		bounce.play();
+
+    	}else{
+
+    		
+    		missed.play();
+    		playerOneScore++;
+    		resetBall();
+    	}
+    	
+    }
+
+     if(ballPosY > canvas.height)
+    {
+    	ballSpeedY = -ballSpeedY;
+    }
+    if(ballPosY < 0)
+    {
+    	ballSpeedY = -ballSpeedY;
+    }
+    
+    
+
+
+}
+
+//encharges of drawing graphics
+function drawAll(){
+
+	
+
+
+	canvasContext.fillStyle = 'black';
+	canvasContext.fillRect(0,0,canvas.width, canvas.height);
+
+	if(visibleWinScreen){
+       
+
+        canvasContext.fillStyle = 'red';
+
+
+        if(playerOneScore >= MAX_SCORE){
+            
+           
+        	canvasContext.fillText("Human Won!", 310,250);
+
+        }else if(playerTwoScore >= MAX_SCORE){
+            
+           
+        	canvasContext.fillText("AI Won!", 330,250);
+
+        }
+   
+        
+		canvasContext.fillText("Click To Continue ", 280,300);
+
+		return;
+	}
+
+
+	console.log(ballPosX);
+
+
+	canvasContext.fillStyle = 'red';
+	canvasContext.fillRect(5, paddleOneY,15,PADDLE_HEIGHT);
+
+	canvasContext.fillStyle = 'red';
+	canvasContext.fillRect(canvas.width - 20, paddleTwoY,15,PADDLE_HEIGHT);
+
+	canvasContext.fillStyle = 'red';
+	canvasContext.beginPath();
+	canvasContext.arc(ballPosX, ballPosY,10,0, Math.PI*2,true);
+	canvasContext.fill();
+
+
+
+	canvasContext.fillText("Human's Score " + playerOneScore, 190,50);
+	canvasContext.fillText("AI's Score " + playerTwoScore, canvas.width-350,50);
+
+}
+
+</script>
+
+<!-- ends JavaScript Code -->
+
+
+
+<br>
+<hr>
+<br>
+
+<h1>My Location</h1>
+
+<div class="button">
+	<a href="#" id="get_location" class="butt">Get My Location</a>
+</div>
+
+<br>
+
+<div id="map">
+	<iframe id="google_map" width="800" height="600" src="https://maps.google.com?output=embed"></iframe>
+</div>
+
+<script>
+	
+	var cds = function(pos){
+
+		var lat = pos.coords.latitude,
+		    long= pos.coords.longitude,
+		    coords = lat + ', ' + long;
+
+		    document.getElementById('google_map').setAttribute('src', 'https://maps.google.com/?q=' + coords + '&z=20&output=embed' );
+
+	}
+
+ 	document.getElementById('get_location').onclick = function(){
+ 		navigator.geolocation.getCurrentPosition(cds);
+ 		return false;
+ 	}
+
+</script>
+<h3>NOTE: If you are using Google Chrome Version 50 or above HTML5 Geolocation<br>
+ has to be serve through Https, therefore Geolocation won't work. Please use Firefox, etc.</h3>
+<hr>
+<br>
+
+<h1>Play Me &amp; Relax</h1>
+
+<audio controls class="audioPlayer">
+  <source src="audio/children.mp3" type="audio/mp3">
+  <source src="audio/children.ogg" type="audio/ogg">
+  <p>Your browser doesn't support HTML5 audio! Please try using a different browser!</p>
+</audio>
+
+<br>
+<hr>
+
+<h1>Watch Me &amp; Relax</h1>
+<video controls>
+    <source src="video/waterfall.mp4" type="video/mp4">
+    <source src="video/waterfall.webm" type="video/webm">
+    <track kind="subtitles" src="subtitles_en.vtt" srclang="en">
+</video>
+
+<br>
+<hr>
+
+<h1>Website Validation</h1>
+<br>
+
+<div class="button">
+	<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fpi.cs.oswego.edu%2F~mrodrig9%2FAssignmentTwo%2Fpage2.html" target="_Blank" class="butt">Validate - Home</a>
+</div>
+<br>
+<div class="button">
+	<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fpi.cs.oswego.edu%2F~mrodrig9%2FAssignmentTwo%2FcompParts.html" target="_Blank" class="butt">Validate - Computer Parts</a>
+</div>
+<br>
+<div class="button">
+	<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fpi.cs.oswego.edu%2F~mrodrig9%2FAssignmentTwo%2FbuildComp.html" target="_Blank" class="butt">Validate - Build A Computer</a>
+</div>
+<br>
+<div class="button">
+	<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fpi.cs.oswego.edu%2F~mrodrig9%2FAssignmentTwo%2Fmedia.html" target="_Blank" class="butt">Validate - Media &amp; Utilities</a>
+</div>
+<br>
+
+<div style="background-color:black;color:white;padding:20px; position:bottom;">
+	<footer>
+		  <h2>Author: Miguel Rodriguez</h2>
+		  <h2>Contact information: <a href="mailto:mrodrig9@oswego.edu" target="_Blank">
+		  mrodrig9@oswego.edu</a>.</h2>
+
+		  © Copyright 2017, All Rights Reserved
+	</footer>
+</div>
+
+</body>
+</html>

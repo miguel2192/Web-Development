@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HTML5 Assignment</title>
+	<meta charset="UTF-8">
+  	<meta name="description" content="SUNY Oswego HTML5">
+  	<meta name="keywords" content="HTML5,CSS">
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+
+<style>
+
+	h1{
+	   text-align:center;
+	   font-family: 'Nosifer', cursive;
+	   font-size:35px;
+	   
+	}
+
+	.parts section h2{
+	   text-align:center;
+	   font-family: 'Nosifer', cursive;
+	   font-size:25px;
+	   
+	}
+
+
+	nav { 
+		border-top: 10px solid black;
+		padding:5px 5px;
+		text-align:center;
+	
+
+
+		 }
+
+	nav a:link,a:visited { 
+		border-radius: 0 0 15px 15px; 
+		padding:0px 15px;
+	}
+
+
+	nav a {
+
+		
+		font-weight: bold;
+		color: #000;
+		margin: 0 5px; 
+		background-color: #131313; 
+		font-family: 'Nosifer', cursive;
+		text-decoration: none;
+		font-size: 20px;
+		color:red;
+		display: inline-block;
+		
+
+		}
+
+	nav a:hover {
+
+		background-color: #D10000; 
+		color: black;
+		/*padding-top: 10px;*/
+       /* padding-bottom: 10px;*/
+
+
+
+		}
+
+
+        .active{
+
+
+       		background-color: #D10000; 
+		    color: black;
+		   /* padding-top: 10px;
+            padding-bottom: 10px;*/  
+
+
+        }
+
+        .center{
+
+        	text-align:center;
+        }
+
+        body{
+        	background-color: #ffe6e6;
+        
+        }
+
+        div img{
+        	user-drag: none; 
+			user-select: none;
+			-moz-user-select: none;
+			-webkit-user-drag: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+
+        }
+
+         footer { 
+
+    		display: block;
+    		text-align:center;
+
+		}
+		.parts p{
+			-webkit-column-count:2;
+			column-count:2;
+			width:1050px;
+			font-size: 25px;
+			align-content: middle;
+			margin-right: auto; 
+			margin-left: auto;
+			-webkit-column-rule:2px dotted #ccc;
+			column-rule:2px dotted grey;
+			text-align:justify;
+			background-color: #ffcccc; 
+			
+		}
+
+		span{
+			padding-left:3em;
+		}
+
+		.cpu img{
+
+			user-drag: none; 
+			user-select: none;
+			-moz-user-select: none;
+			-webkit-user-drag: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+
+			display: block;
+		    margin-left: auto;
+		    margin-right: auto;
+		    padding:15px;
+		    background:black;
+		    border:1px solid red;
+
+
+
+		}
+
+		/* Start dropdown button */
+		/* Dropdown Button */
+		.dropbtn {
+		    background-color: black;
+		    color: red;
+		    padding: 10px;
+		    border: 2px solid;
+            border-radius: 10px;
+
+            font-family:cursive;
+	        font-size:20px;
+		}
+
+		/* Dropdown button on hover & focus */
+		.dropbtn:hover, .dropbtn:focus {
+		    background-color: red;
+		    color:black;
+
+		}
+
+		/* The container <div> - needed to position the dropdown content */
+		.dropdown {
+		    
+		     position: absolute;
+		     bottom:820px;
+		     left:1398px;
+		     
+             
+
+		}
+
+		/* Dropdown Content (Hidden by Default) */
+		.dropdown-content {
+		    display: none;
+		    position: absolute;
+		    background-color: white;
+		    min-width: 160px;
+
+		    border: 2px solid;
+            border-radius: 10px;
+		    
+		}
+
+		/* Links inside the dropdown */
+		.dropdown-content a {
+		    color: red;
+		    font-family: cursive;
+		    font-size: 15px;
+		    padding: 12px 16px;
+		    text-decoration: none;
+		    display: block;
+		}
+
+		/* Change color of dropdown links on hover */
+		.dropdown-content a:hover {
+			background-color: black;
+		}
+
+		/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+		.show {
+			display:block;
+		}
+
+		/*Ends Dropdown */
+
+
+
+</style>
+
+
+<link href="https://fonts.googleapis.com/css?family=Lobster|Nosifer" rel="stylesheet">
+
+</head>
+<body>
+
+
+	<nav>
+	  <a href="page2.html">HOME</a>
+	  <a href="compParts.html"  class="active">COMPUTER PARTS</a>
+	  <a href="buildComp.html">BUILD A COMPUTER</a>
+	  <a href="media.html">MEDIA &amp; UTILITIES</a>
+	  <a href="../index.html">GO TO MAIN</a>
+	</nav>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Search Parts</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#cpu">CPU</a>
+    <a href="#motherboard">Motherboard</a>
+    <a href="#ram">RAM</a>
+    <a href="#gpu">GPU</a>
+    <a href="#case">Computer Case</a>
+    <a href="#hardrive">Hardrive</a>
+    <a href="#ssd">SSD</a>
+    <a href="#psu">PSU</a>
+    <a href="#cooling">Cooling System</a>
+    <a href="#sli">SLI/Crossfire X</a>
+    <a href="#monitor">Monitor</a>
+    <a href="#keyboard">Keyboard</a>
+    <a href="#mouse">Mouse</a>
+  </div>
+</div>
+
+<br>
+<br>
+
+    <div class="center">
+	<img src="images/pc.png" alt="PC Image">
+	</div>
+
+<br>
+<hr>
+
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+<div class="parts">
+	<section>
+		<h1>Computer Parts Demystify</h1>
+		
+			<p>
+			 <span></span>Before we dive into building computers we need to be aware of the parts that we need and understand them.  A computer or a computer system is composed of many different components, each of them performing a different task.  Components is what makes building your own computer worth it since you have more flexibility as opposed to buying one already built from a manufacture. Many manufacturers build their own components, and because of this the components are only compatible within the same manufacture. This means that if someday your GPU dies them you will need to contact the manufacture to purchase it from them since buying a third-party GPU will not work with the motherboard.	
+			</p>
+		
+	</section>
+</div>
+<hr>
+
+<div class="cpu" id="cpu">
+	<img src="images/cpu.jpg" alt="CPU Image">
+</div>
+
+<div class="parts">
+	<section>
+		<h2>Central Processing Unit (CPU)</h2>
+		
+			<p>
+			 <span></span>
+			 The CPU or Central Processing Unit is the brain of the computer. In other words, it allows the machine to make millions of calculations and decisions in just seconds thanks to its ALU. There are many different types of CPU’s, however for everyday life use there are two big leading companies that make them, Intel and AMD. The CPU’s manufactured by these two companies are all good and the power and performance depends on the clock speed and the number of cores. AMD CPU’s tend to be cheaper, so if you in a limited budget I would recommend buying from AMD. AMD’s CPU’s tend to be less quick than Intel’s which can be a problem if you are trying to build a high-end system. Intel’s newest CPU’s come in three different flavors, i3, i5, and i7’s. Choosing the right one depends on how much power you want and how much you are willing to spend. Intel core i7 support hyperthreading which means that if the CPU is four cores, then with hyperthreading it will be 8 cores, making the CPU faster than its counter parts. 	
+			</p>
+		
+	</section>
+</div>
+
+<hr>
+
+<div class="cpu" id="motherboard">
+	<img src="images/motherboard.jpg" alt="Motherboard Image">
+</div>
+
+<div class="parts">
+	<section>
+		<h2>Motherboard</h2>
+		
+			<p>
+			 <span></span>The motherboard is another essential component of every computer. It connects all other components and therefore we need to choose one that is compatible with all the components. Choosing the motherboard depends on the number of features that you want, the CPU that you chose, and your budget. Not all motherboards are created equality, so it’s your job to do your research before you buy.	
+			</p>
+		
+	</section>
+</div>
+
+<hr>
+
+<div class="cpu" id="ram">
+	<img src="images/ram.jpg" alt="RAM Image">
+</div>
+
+<div class="parts">
+	<section>
+		<h2>Random Access Memory (RAM)</h2>
+		
+			<p>
+			 <span></span>RAM or Random Access Memory is what allow us to multitask in our computers. It is a volatile medium of storage extremely fast. By volatile I mean “temporary” which means that when the computer is turn off the program or files loaded are lost. All we need to know for now is that the more RAM, the more you can have multiple programs and tasks running concurrently.	
+			</p>
+		
+	</section>
+</div>
+
+<hr>
+
+<div class="cpu" id="gpu">
+	<img src="images/gpu.jpg" alt="GPU Image">
+</div>
+
+<div class="parts">
+	<section>
+		<h2>Graphics Processing Unit (GPU)</h2>
+		
+			<p>
+			 <span></span>If you want to play the latest games or are interested in Deep Learning, then you need a good GPU. Latest games and programs used new technologies and are more GPU hungry than ever before that’s why you need a good GPU. When you buy your CPU from intel they usually come with onboard graphics which allows you to do many basic tasks but when it comes to high end stuff such as games they tend to lack the power, that’s why you need a dedicated GPU. When it comes to GPU’s there are two major leading manufactures, NVidia and AMD. AMD’s GPU’s tend to be cheaper, so if you are in a limited budget then I would suggest doing your research for AMD. 	
+			</p>
+		
+	</section>
+</div>
+
+<hr>
+
+<div class="cpu" id="case">
+	<img src="images/case.jpg" alt="Case Image">
+</div>
+
+<div class="parts">
+	<section>
+		<h2>Computer Case</h2>
+		
+			<p>
+			 <span></span>Choosing the computer case depends on the number of features, motherboard and the physical look. I would suggest getting a case that has ventilation, so your components are always cool. The motherboard has a big impact on choosing the case since motherboards come in many different sizes as cases do, such as ATX, MicroATX, Mini-ITX. 	
+			</p>
+		
+	</section>
+</div>
+
+<hr>
+
+<div class="cpu" id="hardrive">
+	<img src="images/hardrive.jpg" alt="Hardrive Image">
+</div>
+
+<div class="parts">
+	<section>
+		<h2>Hardrive</h2>
+		
+			<p>
+			 <span></span>The Hardrive is another essential unit, hence we need something to store our files. The Hardrive is non-volatile as opposite from RAM, which means that it’s not temporary therefore allowing us to store files permanently. Choosing the right Hardrive depends on the tasks that you will be doing and the amount of storage required. There are many different Hardrive manufacturers out there, however I personally like Western Digital(WD). WD has divided its Hardrives in colors to make it easier for consumers to identify them, blue, green, red and black. Blue are recommended for everyday use with limited amount of store, green are recommended if need a lot of storage, reds are good for surveillance servers that are constantly reading and writing data, and blacks are recommended for gamers, video producers etc. A factor that plays a big role in choosing the right is the speed or RPM, Hardrives usually come in 5400RPM and 7200RPM which tells you how fast they are. I other words the higher the RPM the faster the Hardrive will be able to read and write data.	
+			</p>
+		
+	</section>
+</div>
+
+<hr>
+
+<div class="cpu" id="ssd">
+	<img src="images/ssd.jpg" alt="SSD Image">
+</div>
+
+<div class="parts">
+	<section>
+		<h2>Solid State Drive (SSD)</h2>
+		
+			<p>
+			 <span></span>As a result of Hardrives being mechanical they are prone to failure and they are usually slow. As an option came along the SSD’s or Solid State Drives which are non-mechanical and are superfast. So if you want your operating system and programs to boot in seconds I would recommend getting an SSD.	
+			</p>
+		
+	</section>
+</div>
+
+<hr>
+
+<div class="cpu" id="psu">
+	<img src="images/psu.jpg" alt="PSU Image">
+</div>
+
+<div class="parts">
+	<section>
+		<h2>Power Supply Unit (PSU)</h2>
+		
+			<p>
+			 <span></span>The power supply is in charge of taking power from the outlet an transforming it into power that the computer components can use. Choosing the right PSU depends on the amount of power that the components need and cable management. There are many manufacturers out there, the amount of power that they provide is determine by the number of Watts. If you care about cable management and want to keep your computer cool, then you want to get a modular one.
+			</p>
+		
+	</section>
+</div>
+
+<hr>
+
+<div class="cpu" id="cooling">
+	<img src="images/cooling.jpg" alt="Cooling Image">
+</div>
+
+<div class="parts">
+	<section>
+		<h2>Cooling System</h2>
+		
+			<p>
+			 <span></span>If you get a high-end CPU or if you are overclocking, then you will probably need a cooling system. Cooling systems are divided into two types, air cooling or water cooling. You want to choose air cooling if your CPU does not provide too much heat, but if otherwise you would need to install a water-cooling system which are generally very expensive.	
+			</p>
+		
+	</section>
+</div>
+
+<hr>
+
+<div class="cpu" id="sli">
+	<img src="images/dual.jpg" alt="SLI Image">
+</div>
+
+<div class="parts">
+	<section>
+		<h2>GPU SLI/Crossfire X</h2>
+		
+			<p>
+			 <span></span>If you are still not happy with the amount of power and performance that your GPU provides, NVidia and AMD has a feature capable of running multiple GPU’s concurrently. SLI is part of NVidia’s and Crossfire X is part of AMD, all this means is that you will able to run multiple GPU’s concurrently increasing the performance. Also, make sure that the motherboard that you are getting supports either of this features.	
+			</p>
+		
+	</section>
+</div>
+
+<hr>
+
+<div class="cpu" id="monitor">
+	<img src="images/monitor.jpg" alt="Monitor Image">
+</div>
+
+<div class="parts">
+	<section>
+		<h2>Monitor</h2>
+		
+			<p>
+			 <span></span>Choosing the right monitor depends on the type of tasks that you will preforming. There are LCD’s, LED’s and IPS. I would recommend getting IPS or In Plane Switching if you care about angle viewing and color accuracy. If you are a gamer or a video enthusiast, then you might want to focus on the refresh rate and lower pixel response is better.	
+			</p>
+		
+	</section>
+</div>
+
+<hr>
+
+<div class="cpu" id="keyboard">
+	<img src="images/keyboard.jpg" alt="Keyboard Image">
+</div>
+
+<div class="parts">
+	<section>
+		<h2>Keyboard</h2>
+		
+			<p>
+			 <span></span>When it comes to keyboard there are many different types to choose from. There is rubber key switch, mechanical key switch keyboards etc. Mechanical keyboards are a little pricey but they feel better when typing, however if noise is a problem then I would recommend going for the rubber key switch ones which are the most common and cheap.	
+			</p>
+		
+	</section>
+</div>
+
+<hr>
+
+<div class="cpu" id="mouse">
+	<img src="images/mouse.jpg" alt="Mouse Image">
+</div>
+
+<div class="parts">
+	<section>
+		<h2>Mouse</h2>
+		
+			<p>
+			 <span></span>The mouse is another key peripheral that we have been used to using. When it comes to gaming, choosing the right DPI for the right game matters.	
+			</p>
+		
+	</section>
+</div>
+
+<div style="background-color:black;color:white;padding:20px; position:bottom;">
+	<footer>
+		  <h2>Author: Miguel Rodriguez</h2>
+		  <h2>Contact information: <a href="mailto:mrodrig9@oswego.edu" target="_Blank">
+		  mrodrig9@oswego.edu</a>.</h2>
+
+		  © Copyright 2017, All Rights Reserved
+	</footer>
+</div>
+
+</body>
+</html>

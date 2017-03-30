@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HTML5 Assignment</title>
+	<meta charset="UTF-8">
+  	<meta name="description" content="SUNY Oswego HTML5">
+  	<meta name="keywords" content="HTML5,CSS">
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+
+<style>
+
+	h1{
+	   text-align:center;
+	   font-family: 'Nosifer', cursive;
+	   font-size:35px;
+	   
+	}
+
+
+	nav { 
+		border-top: 10px solid black;
+		padding:5px 5px;
+		text-align:center;
+	
+
+
+		 }
+
+	nav a:link,a:visited { 
+		border-radius: 0 0 15px 15px; 
+		padding:0px 15px;
+	}
+
+
+	nav a {
+
+		
+		font-weight: bold;
+		color: #000;
+		margin: 0 5px; 
+		background-color: #131313; 
+		font-family: 'Nosifer', cursive;
+		text-decoration: none;
+		font-size: 20px;
+		color:red;
+		display: inline-block;
+		
+
+		}
+
+	nav a:hover {
+
+		background-color: #D10000; 
+		color: black;
+		/*padding-top: 10px;*/
+       /* padding-bottom: 10px;*/
+
+
+
+		}
+
+
+        .active{
+
+
+       		background-color: #D10000; 
+		    color: black;
+		   /* padding-top: 10px;
+            padding-bottom: 10px;*/  
+
+
+        }
+
+        .center{
+
+        	text-align:center;
+        }
+
+        body{
+        	background-color: #ffe6e6;
+        
+        }
+
+        div img{
+        	user-drag: none; 
+			user-select: none;
+			-moz-user-select: none;
+			-webkit-user-drag: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+
+        }
+
+         footer { 
+
+    		display: block;
+    		text-align:center;
+
+		}
+
+		.build p{
+			-webkit-column-count:2;
+			column-count:2;
+			width:1050px;
+			font-size: 25px;
+			align-content: middle;
+			margin-right: auto; 
+			margin-left: auto;
+			-webkit-column-rule:2px dotted #ccc;
+			column-rule:2px dotted grey;
+			text-align:justify;
+			background-color: #ffcccc; 
+			
+		}
+
+		.build section h2{
+		   text-align:center;
+		   font-family: 'Nosifer', cursive;
+		   font-size:25px;
+		   
+	   }
+
+	   span{
+			padding-left:3em;
+		}
+
+		.image img{
+
+			user-drag: none; 
+			user-select: none;
+			-moz-user-select: none;
+			-webkit-user-drag: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+
+			display: block;
+		    margin-left: auto;
+		    margin-right: auto;
+		    padding:15px;
+		    background:black;
+		    border:1px solid red;
+
+
+
+		}
+
+</style>
+
+
+<link href="https://fonts.googleapis.com/css?family=Lobster|Nosifer" rel="stylesheet">
+
+</head>
+<body>
+
+
+	<nav>
+	  <a href="page2.html" >HOME</a>
+	  <a href="compParts.html">COMPUTER PARTS</a>
+	  <a href="buildComp.html" class="active">BUILD A COMPUTER</a>
+	  <a href="media.html">MEDIA &amp; UTILITIES</a>
+	  <a href="../index.html">GO TO MAIN</a>
+	</nav>
+
+<br>
+<br>
+
+    <div class="center">
+	<img src="images/pc.png" alt="PC Image">
+	</div>
+
+<br>
+<hr>
+<h1>Building a Computer</h1>
+
+<div class="build">
+	<section>
+		<h2>Safety</h2>
+
+		<div class="image">
+	      <img src="images/alectrostatic.jpg" alt="Electrostatic Image">
+	    </div>
+		
+			<p>
+			 <span></span>We need to take safety precautions before we start assembling the components. Make sure that you have enough space and that the surface is dry. Electrostatic electricity is a big problem when working with electronics, it can burn the components, that’s why you should always wear shoes and possibly get an Anti-Static Wrist Strap which will discharge the electrostatic electricity from your body.
+			</p>
+		
+	</section>
+</div>
+
+<hr>
+<div class="build">
+	<section>
+		<h2>Assemble Components</h2>
+		
+			<p>
+			 <span></span>I usually start with the motherboard when building computers. So, grab your motherboard and place it into a dry surface. Then, take the CPU without touching its pins since you can damage it and look for the socket into the motherboard. Once you find the socket, pace the CPU and secure into place. If you must put a little pressure that is normal don’t worry. Then install the air cooling system onto of the CPU. Now find the RAM and locate the slots in the motherboard. Once the slots are located install it and secure it into place. Place the motherboard into the case gently and secure with the screws. Place the PSU at the bottom of the case and secure into place. Install the GPU by locating the PCI express slot in the motherboard and secure it into place. Furthermore, place the Hardrive or SSD in the designated spot in the case. Connect the power supply to the motherboard and the components and connect the case fans to the motherboard. Finally connect the PSU to the wall outlet and power on the computer, then you will see some lights on and the fans spinning. Congratulations you successfully built a computer.	
+			</p>
+		
+	</section>
+</div>
+
+<hr>
+<div class="build">
+	<section>
+		<h2>Final Thoughts</h2>
+		
+			<p>
+			 <span></span>Before you start using your computer you need an operating system. There are many kinds of Operating Systems, Linux, Windows, MacOSX etc. Make sure to install it into your Hardrive and then install the drivers for every component.	
+			</p>
+		
+	</section>
+</div>
+
+
+<div style="background-color:black;color:white;padding:20px; position:bottom;">
+	<footer>
+		  <h2>Author: Miguel Rodriguez</h2>
+		  <h2>Contact information: <a href="mailto:mrodrig9@oswego.edu" target="_Blank">
+		  mrodrig9@oswego.edu</a>.</h2>
+
+		  © Copyright 2017, All Rights Reserved
+	</footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Assignment</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="description" content="SUNY Oswego CSS3">
+	<meta name="keywords" content="CSS/CSS3">
+
+	<!--    Starts CSS -->
+	<style>
+
+		div img{
+	    	user-drag: none; 
+			user-select: none;
+			-moz-user-select: none;
+			-webkit-user-drag: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+
+	       	 }
+
+	 	#content {
+	    
+		    height: 100px;
+		    padding: 15px;
+		    background-color: white;
+		    box-shadow: 10px 10px 5px grey;
+		    width:800px; margin:0 auto;
+
+		}
+
+		body {
+
+			margin:0px;
+			overflow-x: hidden;
+
+			}
+
+		div.intro {
+
+		   width:600px; margin:0 auto;
+		   background-color: white;
+		   box-shadow: 10px 10px 5px grey;
+		   margin-bottom: 25px;
+
+			}
+		.logo{
+			font-family: despicable; 
+			font-size: 100px;
+		}
+
+		div.container {
+		  
+		  text-align: center;
+		  padding: 10px 20px;
+			}
+		@font-face {
+		   font-family: despicable;
+		   src: url(fonts/lasvegas-jackpot.woff);
+		}
+
+		.nav #el{
+	      font-family: despicable; 
+	      font-size: 25px;"
+
+		}
+
+
+	</style>
+
+<!-- End CSS -->
+
+</head>
+<body>
+
+	<header>
+	    <div class='logo'>CSS/CSS3</div>
+	    <div class="nav">
+		  <ul id="el">
+	        <li class="home"><a  class="active" href="#">Home</a></li>
+	        <li class="about"><a href="characters.html">Characters</a></li>
+	        <li class="news"><a href="videos.html">Videos</a></li>
+	        <li class="contact"><a href="gallery.html">Gallery</a></li>
+	        <li class="contact"><a href="../index.html">Go To Main</a></li>
+	      </ul>
+	    </div>
+
+	 </header>
+	<br>
+
+	<div class="intro">
+	  <img src="images/despicable.jpg" alt="Despicable">
+	  <div class="container">
+	    <p style=" font-family: despicable; font-size: 35px;">Despicable me 2 is a 3D animation movie created by Illumination entertainment.</p>
+	  </div>
+	</div>
+
+	<div>
+		<footer style=" font-family: despicable; font-size: 25px;">
+			  <h2>Author: Miguel Rodriguez</h2>
+			  <h2>Contact information: <a href="mailto:mrodrig9@oswego.edu" target="_Blank">
+			  mrodrig9@oswego.edu</a>.</h2>
+
+			  © Copyright 2017, All Rights Reserved
+		</footer>
+	</div>
+
+</body>
+</html>

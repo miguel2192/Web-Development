@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Assignment</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="description" content="SUNY Oswego CSS3">
+  <meta name="keywords" content="CSS/CSS3">
+
+  <!--    Starts CSS -->
+  <style>
+  body {
+    margin:0px;
+    overflow-x: hidden; 
+  }
+
+
+  	div img{
+        user-drag: none; 
+  			user-select: none;
+  			-moz-user-select: none;
+  			-webkit-user-drag: none;
+  			-webkit-user-select: none;
+  			-ms-user-select: none;
+
+          }
+
+    .container {
+        position: relative;
+        width: 600px;
+        background-color: white;
+        box-shadow: 10px 10px 5px grey;
+        width:800px; margin:0 auto;
+    }
+
+    .image {
+        display: block;
+        width:600px; margin:0 auto;
+        height: auto;
+
+    }
+
+   .overlay {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffbf00;
+        overflow: hidden;
+        width: 100%;
+        height:0;
+        transition: .5s ease;
+    }
+
+  .container:hover .overlay {
+        bottom: 0;
+        height: 100%;
+    }
+
+  .text {
+    
+        color: white;
+        font-size: 40px;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    @font-face {
+        font-family: despicable;
+        src: url(fonts/lasvegas-jackpot.woff);
+    }
+
+    .nav #el{
+        font-family: despicable; 
+        font-size: 25px;"
+
+    }
+    .logo{
+        font-family: despicable; 
+        font-size: 100px;
+    }
+
+  </style>
+
+  <!-- End CSS -->
+
+</head>
+<body>
+
+  <header>
+      <div class='logo'>CSS/CSS3</div>
+      <div class="nav">
+        <ul id="el">
+          <li class="home"><a href="page3.html">Home</a></li>
+          <li class="about"><a class="active" href="characters.html">Characters</a></li>
+          <li class="news"><a href="videos.html">Videos</a></li>
+          <li class="contact"><a href="gallery.html">Gallery</a></li>
+          <li class="contact"><a href="../index.html">Go To Main</a></li>
+        </ul>
+      </div>
+    </header>
+  <br>
+    <div class="container">
+    <img src="images/Gru.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Hello, My name is Gru and I am played by Steve Carell. I am a villain that is currently using his powers for good.</div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <img src="images/lucy.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Hello, my name is Lucy and I am played by Kristen Wiig. I worked for the AVL and I am Gru's girlfriend.</div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <img src="images/Nefario.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Hello, my name is Dr. Nefario and I am played by Russell Brand. I am Gru's co-worker working on his lab to make the world a better place.</div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <img src="images/elmacho.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Hello, my name is El Macho and I am played by Benjamin Bratt. I am the villain in Despicable Me 2.</div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <img src="images/bob.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Hello, my name is Bob the Minion and I am played by Pierre Coffin. I work for Gru and he is my father.</div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <img src="images/stuart.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Hello, my name is Stuart the Minion and I am played by Pierre Coffin. I work for Gru and he is my father.</div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <img src="images/kevin.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Hello, my name is Kevin the Minion and I am played by Pierre Coffin. I work for Gru and he is my father. For some odd reason I look like Kevin from "The Office US".</div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <img src="images/acnes.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Hello, my name is Agnes and I am played by Elsie Fisher. I am Gru's adopted orphan daughter and I am happy because Lucy is my new mom.</div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <img src="images/evilminion.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Hello, my name is Evil minion and I am played by Pierre Coffin. We are stupid and destroy everything we touch.</div>
+    </div>
+  </div>
+  <br>
+
+    <div>
+  	<footer style=" font-family: despicable; font-size: 25px;">
+  		  <h2>Author: Miguel Rodriguez</h2>
+  		  <h2>Contact information: <a href="mailto:mrodrig9@oswego.edu" target="_Blank">
+  		  mrodrig9@oswego.edu</a>.</h2>
+
+  		  © Copyright 2017, All Rights Reserved
+  	</footer>
+  </div>
+
+</body>
+</html>

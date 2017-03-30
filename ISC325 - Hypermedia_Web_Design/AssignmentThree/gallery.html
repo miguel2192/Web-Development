@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Assignment</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="description" content="SUNY Oswego CSS3">
+  <meta name="keywords" content="CSS/CSS3">
+
+  <!--    Starts CSS -->
+  <style>
+
+    body {
+      margin:0px;
+      overflow-x: hidden;
+    }
+
+  	div img{
+
+        user-drag: none; 
+  			user-select: none;
+  			-moz-user-select: none;
+  			-webkit-user-drag: none;
+  			-webkit-user-select: none;
+  			-ms-user-select: none;
+         box-shadow: 10px 10px 5px grey;
+
+        }
+
+
+    .gallHover img{
+
+        -webkit-transform:scale(0.8); 
+        -moz-transform:scale(0.8); 
+        -o-transform:scale(0.8); 
+        -webkit-transition-duration: 0.5s; 
+        -moz-transition-duration: 0.5s; 
+        -o-transition-duration: 0.5s; 
+        opacity: 0.2; 
+        margin: 0 10px 5px 0;
+        box-shadow: 10px 10px 5px grey;
+
+    }
+
+    .gallHover img:hover{
+        -webkit-transform:scale(1.1);
+        -moz-transform:scale(1.1); 
+        -o-transform:scale(1.1); 
+        box-shadow:0px 0px 30px grey; 
+        -webkit-box-shadow:0px 0px 30px grey;
+        -moz-box-shadow:0px 0px 30px grey; 
+        opacity: 1;
+        box-shadow: 10px 10px 5px grey;
+    }
+
+    @font-face {
+        font-family: despicable;
+        src: url(fonts/lasvegas-jackpot.woff);
+    }
+
+    .nav #el{
+        font-family: despicable; 
+        font-size: 25px;"
+
+    }
+    .logo{
+        font-family: despicable; 
+        font-size: 100px;
+    }
+   
+  </style>
+
+  <!-- End CSS -->
+
+</head>
+<body>
+
+  <header>
+      <div class='logo'>CSS/CSS3</div>
+      <div class="nav">
+        <ul id="el">
+          <li class="home"><a href="page3.html">Home</a></li>
+          <li class="about"><a href="characters.html">Characters</a></li>
+          <li class="news"><a href="videos.html">Videos</a></li>
+          <li class="contact"><a class="active" href="gallery.html">Gallery</a></li>
+          <li class="contact"><a href="../index.html">Go To Main</a></li>
+        </ul>
+      </div>
+  </header>
+
+  <div class="gallHover">
+    <img src="images/Gru.jpg" alt="Gru Image" />
+    <img src="images/lucy.jpg" alt="lucy Image" />
+    <img src="images/elmacho.jpg" alt="el macho Image" />
+    <img src="images/kevin.jpg" alt="kevin Image"/>
+    <img src="images/acnes.jpg" alt="agnes Image"/>
+    <img src="images/Nefario.jpg" alt="nefario Image"/>
+    <img src="images/despicable.jpg" alt="despicable me Image" />
+    <img src="images/stuart.jpg" alt="stuart Image"/>
+    <img src="images/evilminion.jpg" alt="evil minion Image"/>
+    <img src="images/margo.jpg" alt="margo Image"/>
+    <img src="images/edith.jpg" alt="edith Image"/>
+  </div>
+
+  <div>
+  	<footer style=" font-family: despicable; font-size: 25px;">
+  		  <h2>Author: Miguel Rodriguez</h2>
+  		  <h2>Contact information: <a href="mailto:mrodrig9@oswego.edu" target="_Blank">
+  		  mrodrig9@oswego.edu</a>.</h2>
+  		  © Copyright 2017, All Rights Reserved
+  	</footer>
+  </div>
+
+</body>
+</html>

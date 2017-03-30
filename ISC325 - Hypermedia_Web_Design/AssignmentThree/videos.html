@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Assignment</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="SUNY Oswego CSS3">
+    <meta name="keywords" content="CSS/CSS3">
+
+  <!--    Starts CSS -->
+  <style>
+
+  	div img{
+
+        user-drag: none; 
+  			user-select: none;
+  			-moz-user-select: none;
+  			-webkit-user-drag: none;
+  			-webkit-user-select: none;
+  			-ms-user-select: none;
+
+          }
+
+    iframe{
+        box-shadow: 10px 10px 5px grey;
+        margin:0 auto;
+        display:block;
+    
+        }
+
+    body {
+
+        margin:0px;
+        overflow-x: hidden; 
+      }
+
+    div.Video {
+        width:600px; margin:0 auto;
+        background-color: white;
+        box-shadow: 10px 10px 5px grey;
+        margin-bottom: 25px;
+        font-size:25px;
+    }
+
+    div.container {
+      
+        text-align: center;
+        padding: 10px 20px;
+        font-family: despicable; 
+        font-size: 35px;"
+    }
+    @font-face {
+        font-family: despicable;
+        src: url(fonts/lasvegas-jackpot.woff);
+    }
+
+    .nav #el{
+        font-family: despicable; 
+        font-size: 25px;"
+
+    }
+    .logo{
+        font-family: despicable; 
+        font-size: 100px;
+    }
+
+  </style>
+
+  <!-- End CSS -->
+
+</head>
+<body>
+
+  <header>
+      <div class='logo'>CSS/CSS3</div>
+      <div class="nav">
+        <ul id="el">
+          <li class="home"><a  href="page3.html">Home</a></li>
+          <li class="about"><a href="characters.html">Characters</a></li>
+          <li class="news"><a class="active" href="videos.html">Videos</a></li>
+          <li class="contact"><a href="gallery.html">Gallery</a></li>
+          <li class="contact"><a href="../index.html">Go To Main</a></li>
+        </ul>
+      </div>
+    </header>
+  <br>
+   <div class="Video">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/yM9sKpQOuEw?autoplay=1" allowfullscreen></iframe>
+    <div class="container">
+      <p>Despicable me 2 Official Trailer.</p>
+    </div>
+  </div>
+
+  <br>
+   <div class="Video">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/wd4Oxk11PA0" frameborder="0" allowfullscreen></iframe>
+    <div class="container">
+      <p>The Minions singing "I Swear" by all-4-One.</p>
+    </div>
+  </div>
+   
+  <br>
+
+    <div>
+  	<footer style=" font-family: despicable; font-size: 25px;">
+  		  <h2>Author: Miguel Rodriguez</h2>
+  		  <h2>Contact information: <a href="mailto:mrodrig9@oswego.edu" target="_Blank">
+  		  mrodrig9@oswego.edu</a>.</h2>
+
+  		  © Copyright 2017, All Rights Reserved
+  	</footer>
+  </div>
+
+</body>
+</html>

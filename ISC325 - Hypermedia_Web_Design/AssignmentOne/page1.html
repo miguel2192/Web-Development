@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Drones</title>
+	<meta charset="UTF-8">
+    <meta name="description" content="SUNY Oswego HTML">
+    <meta name="keywords" content="HTML,CSS">
+
+	<style>
+        body{
+        	background-color:#00bfff;
+        }
+
+    	h1{
+    		text-align:center;
+    		font-family:Verdana;
+    	}
+
+    	.intro{
+    		text-align:center;
+    	}
+    	.usage{
+    		text-align:center;
+    	}
+    	p{
+    		font-family:Verdana;
+    		font-size:25px;
+
+    	}
+
+    	table, th, td {
+		    border: 2px solid black;
+		    border-collapse: collapse;
+
+	    
+		}
+		th, td {
+		    padding: 5px;
+		    text-align: left;
+		    font-family: Verdana;    
+		}
+
+		a{
+			text-decoration: none;
+			font-family:Verdana;
+			font-size:25px;
+		}
+       
+       ul{
+	       	list-style: none;
+	       	margin: 0;
+	        padding: 0;
+	        overflow: hidden;
+	        background-color: black;
+
+       	}
+
+
+       ul li{
+       		float:left;
+       }
+
+       li a{
+	       	display:block;
+	       	color:white;
+	       	padding: 14px 16px;
+
+       }
+
+       a:hover:not(.active) {
+
+       		background-color: red;
+       }
+
+       .active {
+
+       		background-color:red;
+
+       }
+       
+       footer { 
+
+    		display: block;
+    		text-align:center;
+
+		}
+
+	    .right{
+
+	    	position: absolute;
+		    right: 0px;
+		    width: 300px;
+		    padding: 10px;	   
+
+		     }
+
+	    table{
+
+	    	margin-left:auto; 
+            margin-right:auto;
+	    }
+	    iframe{
+
+	    	text-align:center;
+	    }
+
+        div .foot{
+
+     		text-align:center;
+
+        }
+
+
+	</style>
+
+</head>
+<body>
+
+<div class="right" id="top">
+
+		<a href="#bottom">Go to Bottom</a>
+
+</div>
+
+<ul>
+	<li><a class="active" href="#">Home</a></li>
+	<li><a href="buildUav.html">Build an UAV</a></li>
+	<li><a href="opUav.html">Operate an UAV</a></li>
+	<li><a href="imgVideo.html">Videos &amp; Images </a></li>
+	<li><a href="../index.html">Go to Main</a></li>
+
+	
+
+</ul>
+
+<br>
+
+<h1><u>Introduction to Drones/UAVs</u></h1>
+
+<div Style="text-align:center">
+	<img src="images/droneIntro.jpg" alt="droneImg">
+</div>
+
+
+<div class="intro">
+
+	<p>"Drone" is an ambiguous word since it could mean a Quadcopter, Tricopter, Octocopter, Hexacopter<br>
+		or any other vehicle that flyes without having a pilot on board. UAV which stands for "Unmanned Aerial Vehicles" <br>is another name for drones meaning a machine that can fly without having a human pilot present inside the <br>vehicle. This term is commonly used by the FAA or "Federal Aviation Administration" which regulates everything <br>
+		that flies in the U.S.A. As of 2016 the FAA passed many laws concerning UAV's, which basically requires different<br> types of UAV user's to register their aircraft. Here is a simple chart from the FAA:
+	 </p>
+
+</div>
+
+<table Style="width:30%">
+     
+     <tr>
+	     <th>Requirenments</th>
+	     <th>Fly for Fun</th>
+	     <th>Fly for Work</th>
+     </tr>
+
+   	 <tr>
+   		<td>Pilot Requirements</td>
+   		<td>No pilot requirements</td>
+   		<td>Must have Remote Pilot Airman Certificate
+            Must be 16 years old Must pass TSA vetting</td>
+	</tr>
+
+	
+
+	<tr>
+   		<td>Aircraft Requirements</td>
+   		<td>Must be registered if over 0.55 lbs.</td>
+   		<td>Must be less than 55 lbs.
+			Must be registered if over 0.55 lbs. (online)
+			Must undergo pre-flight check to ensure UAS is in condition for safe operation</td>
+	</tr>
+
+
+
+	<tr>
+   		<td>Location Requirements</td>
+   		<td>5 miles from airports without prior notification to airport and air traffic control</td>
+   		<td>Class G airspace*</td>
+	</tr>
+
+
+
+	<tr>
+   		<td>Operating Rules</td>
+   		<td>Must ALWAYS yield right of way to manned aircraft
+			Must keep the aircraft in sight (visual line-of-sight)
+			UAS must be under 55 lbs.
+			Must follow community-based safety guidelines
+			Must notify airport and air traffic control tower before flying within 5 miles of an airport</td>
+   		<td>Must keep the aircraft in sight (visual line-of-sight)*
+			Must fly under 400 feet*
+			Must fly during the day*
+			Must fly at or below 100 mph*
+			Must yield right of way to manned aircraft*
+			Must NOT fly over people*
+			Must NOT fly from a moving vehicle*</td>
+	</tr>
+
+	<tr>
+   		<td>Example Applications</td>
+   		<td>Educational or recreational flying only</td>
+   		<td>Flying for commercial use (e.g. providing aerial surveying or photography services)
+			Flying incidental to a business (e.g. doing roof inspections or real estate photography)</td>
+	</tr>
+
+	<tr>
+   		<td>Legal or Regulatory Basis</td>
+   		<td>Public Law 112-95, Section 336 – Special Rule for Model Aircraft
+			FAA Interpretation of the Special Rule for Model Aircraft</td>
+   		<td>Title 14 of the Code of Federal Regulation (14 CFR) Part 107</td>
+	</tr>
+
+	<tr>
+		<td>Source</td>
+		<td><a href="https://www.faa.gov/uas/getting_started/" target="_Blank">FAA UAV's Chart</a></td>
+	</tr>
+
+</table>
+
+<hr>
+
+<h1><u>UAV's usage</u></h1>
+
+<br>
+
+<div class="usage">
+	<p>UAV's are currently being used in many different scenerios. From personal use to commercial use to the Military.<br></p>
+
+	<hr>
+	<h2><u>Personal Use</u></h2>
+
+	<p>Many people are using drones for personal use, as a sport called FPV or "First Person View" where players race<br>
+	drones for fun or for prices. FPV cameras are attached to the drones where they send the video signal to a<br>
+	reciever which them communicates to a headset where players can view the video in realtime while they race.</p>
+
+<div Style="text-align:center" >
+
+     <p>Image 1.1 - Phoenix Cup 2016 FPV Drone Race Event</p>
+	<a href="http://www.thedronesmag.com/phoenix-cup-2016-fpv-drone-race-event/" target="_Blank">Cup 2016 FPV Drone Race Event</a>
+	<br>
+	<img src="images/peopleracing.jpg" alt="FPV Picture">
+
+	<br>
+
+	<p>Video 1.1 - FPV Drone Racing</p>
+
+	 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmEI_HZS64U"  allowfullscreen></iframe> 
+
+
+</div>
+
+	<hr>
+	<h2><u>Commercial Use</u></h2>
+	<p>Some companies are currently or in the process of using drones as a delivery tool. An example of this can be<br> Amazon new Prime Air service. It is being develop by amazon with the intention of delivering packages in<br>
+	30 minutes or less. This Could increase sales and costumer satisfaction.</p>
+
+	<p>Image 1.1 -Amazon Prime Air Service Drone</p>
+	<a href="https://www.amazon.com/Amazon-Prime-Air/b?ie=UTF8&node=8037720011" target="_Blank">Prime Air Source</a>
+	<br>
+	<img src="images/prime.jpg" alt="Prime Air Pic">
+	<br>
+
+	<p>Image 1.2 -Amazon Prime Air Service Drone</p>
+	<img src="images/prime2.jpg" alt="Prime Air Pic">
+	<br>
+	<p>Video 1.1 - Amazon Prime Air Service</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/vNySOrI2Ny8" allowfullscreen></iframe>
+
+	<hr>
+	<h2><u>Military</u></h2>
+
+	<p>The military is currently using drones to reduce soldier casualties. </p>
+
+	<br>
+	<p>Video 1.1 - Military Drone Operations</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/hZV8IfJm-MI" allowfullscreen></iframe>
+
+</div>
+
+<hr>
+
+<div style="background-color:black;color:white;padding:20px;">
+	<footer>
+	  <p>Author: Miguel Rodriguez</p>
+	  <p>Contact information: <a href="mailto:mrodrig9@oswego.edu" target="_Blank">
+	  mrodrig9@oswego.edu</a>.</p>
+
+	  © Copyright 2017, All Rights Reserved
+	</footer>
+</div>
+
+<div class="right" id="bottom">
+
+	<a href="#top">Go to Top</a>
+
+</div>
+
+</body>
+</html>
